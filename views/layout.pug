@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    
+    title= title
+    
+    // Importing Qlik's JS files
+    script(type='text/javascript').
+    script(type='module', src='https://unpkg.com/@qlik/sdk')
+    script(src='https://unpkg.com/enigma.js')
+    script(src='https://unpkg.com/@nebula.js/stardust')
+    script(src='https://unpkg.com/@nebula.js/sn-pie-chart')
+    script(type="module" src="../../app.js")
+
+    // Style
+    style(type='text/css').
+      #login {
+        display: none;
+      }
+      .object {
+        float: left;
+        display: inline-block;
+        height: 400px;
+        width: 50%;
+      }
+      #loading {
+        font-size: 40px;
+        display: none;
+      }
+
+  body
+    block content

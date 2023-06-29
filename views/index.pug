@@ -1,0 +1,54 @@
+extends layout
+
+block content
+  h1= 'Welcome to Qlik Nebula Demo'
+
+  h2='This demo is running with OAuth public client and using websockets'
+  div(id='login')
+    | You are not logged in.
+    button(id='login_button').
+    login with Qlik
+
+  div(id='loading').
+    Loading...
+  
+  div(class='toolbar')
+
+  //A pie object will be rendered here
+  div(id='pie', class='object')
+
+  div 
+    iframe(src="https://pr55hx3zw2skfny.us.qlikcloud.com/single/?appid=53b0d76b-0c0b-4897-af5a-fccd26dad6b0&sheet=1a2d1569-7eb0-47a5-a37e-208c7e7ef54e&theme=horizon&opt=ctxmenu,currsel", style="border:none;width:100%;height:100%;") 
+
+
+//- Tutorial content
+  p This is a line with #[em some emphasis] and #[strong strong text] markup.
+  p This line has un-escaped data: !{'<em> is emphasized</em>'} and escaped data: #{'<em> is not emphasized</em>'}.
+    | This line follows on.
+  p= 'Evaluated and <em>escaped expression</em>:' + title
+
+  <!-- You can add HTML comments directly -->
+  // You can add single line JavaScript comments and they are generated to HTML comments
+  //- Introducing a single line JavaScript comment with "//-" ensures the comment isn't rendered to HTML
+
+  p A line with a link
+    a(href='/catalog/authors') Some link text
+    |  and some extra text.
+
+  #container.col
+    if title
+      p A variable named "title" exists.
+    else
+      p A variable named "title" does not exist.
+    p.
+      Pug is a terse and simple template language with a
+      strong focus on performance and powerful features.
+
+  h2 Generate a list
+
+  ul
+    each val in [1, 2, 3, 4, 5]
+      li= val
+
+//- h1= title
+//-  p Welcome to #{title} -//
