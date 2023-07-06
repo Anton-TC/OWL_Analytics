@@ -1,12 +1,28 @@
 extends layout
 
 block content
-  div(class="row-container")
-    div(class="first-row")
-      p Some text
-      p And some more text
+  // Pestañas
+  div(id="Introduccion" class="tabcontent")
+    h1 Introducción
+    include intro.pug 
+  
+  div(id="News" class="tabcontent")
+    include testsheet.pug
 
-    iframe(class="second-row", src="https://pr55hx3zw2skfny.us.qlikcloud.com/single/?appid=53b0d76b-0c0b-4897-af5a-fccd26dad6b0&sheet=1a2d1569-7eb0-47a5-a37e-208c7e7ef54e&theme=horizon&opt=ctxmenu,currsel") 
+  div(id="Contact" class="tabcontent")
+    h3 Contact
+    p Get in touch, or swing by for a cup of coffee.
+
+
+  div(id="About" class="tabcontent")
+    h3 About
+    p Who we are and what we do.
+
+  div 
+    h1 ¡Bienvenido!
+    p Esta página web tiene el propósito de presentar información, gráficos y análisis para relacionar el uso de los distintos tipos de perifericos de tipo mouse con los resultados finales de los jugadores de la Overwatch League en la temporada del año 2021.
+    h2 Instrucciones de uso
+    p La página es sencilla, en la parte superior cuenta con pestañas que presentan distintos temás con gráficos interactivos, explicaciones y análisis de la información recaudada. Es recomendable que la navegación sea de derecha a izquierda. En caso de querer volver a ver este aviso, solo es necesario refrescar la página (puedes usar la tecla F5 para lograrlo).
 
 
 //- Tutorial content

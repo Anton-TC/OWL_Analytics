@@ -6,41 +6,16 @@ html(lang="en")
     meta(name='viewport', content='width=device-width, initial-scale=1')
     
     title= title
+    style
+      include ../public/stylesheets/style.css
     
-    // Importing Qlik's JS files
-    script(type='text/javascript').
-    script(type='module', src='https://unpkg.com/@qlik/sdk')
-    script(src='https://unpkg.com/enigma.js')
-    script(src='https://unpkg.com/@nebula.js/stardust')
-    script(src='https://unpkg.com/@nebula.js/sn-pie-chart')
-    script(type="module" src="../../app.js")
-
-    // Style
-    style(type='text/css').
-      body, html {
-        width: 100%; 
-        height: 100%; 
-        margin: 0; 
-        padding: 0
-      }
-      .row-container {
-        display: flex; 
-        width: 100%; 
-        height: 100%; 
-        flex-direction: 
-        column; 
-        background-color: blue; 
-        overflow: hidden;
-      }
-      .first-row {
-        background-color: lime; 
-      }
-      .second-row { 
-        flex-grow: 1; 
-        border: none; 
-        margin: 0; 
-        padding: 0; 
-      }
+    script 
+      include ../public/javascripts/navbar.js
 
   body
+    button(class="tablink" onclick="openPage('Introduccion', this, 'red')") Introducción
+    button(class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen") News
+    button(class="tablink" onclick="openPage('Contact', this, 'blue')") Contact
+    button(class="tablink" onclick="openPage('About', this, 'orange')") About
+
     block content
