@@ -1,24 +1,24 @@
 extends layout
 
 block content
-  h1= 'Welcome to Qlik Nebula Demo'
+  // Pestañas
+  div(id="Introduccion" class="tabcontent")
+    include intro.pug 
 
-  h2='This demo is running with OAuth public client and using websockets'
-  div(id='login')
-    | You are not logged in.
-    button(id='login_button').
-    login with Qlik
+  div(id="News" class="tabcontent")
+    h1 Análisis 1
+    include testsheet.pug
 
-  div(id='loading').
-    Loading...
-  
-  div(class='toolbar')
+  div(id="Contact" class="tabcontent")
+    h3 Contact
+    include blogtest.pug 
 
-  //A pie object will be rendered here
-  div(id='pie', class='object')
+  div(id="About" class="tabcontent")
+    h3 About
+    include blogtest.pug 
 
-  div 
-    iframe(src="https://pr55hx3zw2skfny.us.qlikcloud.com/single/?appid=53b0d76b-0c0b-4897-af5a-fccd26dad6b0&sheet=1a2d1569-7eb0-47a5-a37e-208c7e7ef54e&theme=horizon&opt=ctxmenu,currsel", style="border:none;width:100%;height:100%;") 
+  script 
+    include ../public/javascripts/navbar.js
 
 
 //- Tutorial content

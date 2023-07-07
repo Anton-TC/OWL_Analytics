@@ -1,0 +1,26 @@
+            table(style='width:100%' border='1')
+                tr
+                    th Nombre de Variable
+                    th Descripción
+                
+                tr
+                    td 
+                    td 
+                tr
+                    td 
+                    td 
+                tr
+                    td 
+                    td 
+                tr
+                    td 
+                    td 
+                tr
+                    td 
+                    td 
+                tr
+                    td 
+                    td 
+                tr
+                    td 
+                    td 

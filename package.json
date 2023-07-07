@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "devstart": "nodemon --experimental-network-imports ./bin/www",
+    "devstart": "node /bin/www",
     "serverstart": "SET DEBUG=owl-analytics:* & npm run devstart"
   },
   "dependencies": {

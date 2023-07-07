@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #f1f1f1;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.3)
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .content {
+    float: left;
+    width: 100%;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    margin-top: 20px;
+  }
