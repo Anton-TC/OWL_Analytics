@@ -3,26 +3,22 @@ extends layout
 block content
   // Pestañas
   div(id="Introduccion" class="tabcontent")
-    h1 Introducción
     include intro.pug 
-  
+
   div(id="News" class="tabcontent")
+    h1 Análisis 1
     include testsheet.pug
 
   div(id="Contact" class="tabcontent")
     h3 Contact
-    p Get in touch, or swing by for a cup of coffee.
-
+    include blogtest.pug 
 
   div(id="About" class="tabcontent")
     h3 About
-    p Who we are and what we do.
+    include blogtest.pug 
 
-  div 
-    h1 ¡Bienvenido!
-    p Esta página web tiene el propósito de presentar información, gráficos y análisis para relacionar el uso de los distintos tipos de perifericos de tipo mouse con los resultados finales de los jugadores de la Overwatch League en la temporada del año 2021.
-    h2 Instrucciones de uso
-    p La página es sencilla, en la parte superior cuenta con pestañas que presentan distintos temás con gráficos interactivos, explicaciones y análisis de la información recaudada. Es recomendable que la navegación sea de derecha a izquierda. En caso de querer volver a ver este aviso, solo es necesario refrescar la página (puedes usar la tecla F5 para lograrlo).
+  script 
+    include ../public/javascripts/navbar.js
 
 
 //- Tutorial content

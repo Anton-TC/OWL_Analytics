@@ -13,12 +13,19 @@ body, html {
   margin: 0; 
   padding: 0
 }
+
+/* ------------------------------------- iFrame ------------------------------------- */
+
+.ifrm {
+  width: 100%;
+  min-height: 800px;
+}
+
 .row-container {
   display: flex; 
   width: 100%; 
-  height: 100%; 
-  flex-direction: 
-  column; 
+  min-height: 100%;
+  flex-direction: column; 
   background-color: blue; 
   overflow: hidden;
 }
@@ -38,7 +45,6 @@ body, html {
 body, html {
   height: 100%;
   margin: 0;
-  font-family: Arial;
 }
 
 /* Style tab links */
@@ -63,7 +69,7 @@ body, html {
   color: white;
   display: none;
   padding: 100px 20px;
-  height: 100%;
+  min-height: 100%;
 }
 
 #Introduccion {background-color: red;}
