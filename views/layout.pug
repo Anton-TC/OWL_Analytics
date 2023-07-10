@@ -9,11 +9,13 @@ html(lang="en")
     style
       include ../public/stylesheets/style.css
       include ../public/stylesheets/blogLayout.css
+      include ../public/stylesheets/tables.css
+      include ../public/stylesheets/heroimages.css
 
   body
-    button(class="tablink" onclick="openPage('Introduccion', this, 'red')") Introducción
-    button(class="tablink" onclick="openPage('Analisis', this, 'green')" id="defaultOpen") Análisis
-    button(class="tablink" onclick="openPage('Contact', this, 'blue')") Contact
-    button(class="tablink" onclick="openPage('About', this, 'orange')") About
+    button(class="tablink" onclick="openPage('Introduccion', this, '#f99e1a')") Introducción
+    button(class="tablink" onclick="openPage('Analisis', this, '#405275')") Análisis
+    button(class="tablink" onclick="openPage('Conclusiones', this, '#218ffe')" id="defaultOpen") Conclusiones
+    button(class="tablink" onclick="openPage('Bibliografia', this, '#43484c')") Bibliografía
 
     block content

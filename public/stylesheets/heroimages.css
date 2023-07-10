@@ -1,0 +1,60 @@
+.ow1 {
+	height: 70vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/OWL1.jpg) center center / cover no-repeat;
+	border-radius: 25px;
+}
+
+.ow2 {
+	height: 70vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/OWL2.jpg) center center / cover no-repeat;
+	border-radius: 25px;
+}
+
+.ow3 {
+	height: 70vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/OWL3.png) center center / cover no-repeat;
+	border-radius: 25px;
+	background-position: 0% 0%;
+}
+
+.ow4 {
+	height: 70vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/OWL4.jpg) center center / cover no-repeat;
+	border-radius: 25px;
+	background-position: 0% 50%;
+}
+
+.ow5 {
+	height: 70vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/OWL5.jpg) center center / cover no-repeat;
+	border-radius: 25px;
+	background-position: 0% 30%;
+}
+
+.ow6 {
+	height: 70vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/OW2.jpg) center center / cover no-repeat;
+	border-radius: 25px;
+	background-position: top;
+}
+
+.kaggle {
+	height: 50vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/Kaggle1.jpg) center center / cover no-repeat;
+	border-radius: 25px;
+	background-position: 0% 25%;
+}
+
+.qlik {
+	height: 50vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/Qlik1.jpg) center center / cover no-repeat;
+	border-radius: 25px;
+	background-position: top left;
+}
+
+.logi {
+	height: 50vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/Logi.png) center center / cover no-repeat;
+	border-radius: 25px;
+	background-position: 0% 40%;
+}

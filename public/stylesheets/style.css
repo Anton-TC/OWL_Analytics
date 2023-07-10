@@ -1,6 +1,6 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 2vw "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -12,6 +12,11 @@ body, html {
   height: 100%; 
   margin: 0; 
   padding: 0
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 /* ------------------------------------- iFrame ------------------------------------- */
@@ -56,7 +61,7 @@ body, html {
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
-  font-size: 17px;
+  font-size: 2vw;
   width: 25%;
 }
 
@@ -72,7 +77,7 @@ body, html {
   min-height: 100%;
 }
 
-#Introduccion {background-color: red;}
-#Analisis {background-color: green;}
-#Contact {background-color: blue;}
-#About {background-color: orange;}
+#Introduccion {background-color: #f99e1a;}
+#Analisis {background-color: #405275;}
+#Conclusiones {background-color: #218ffe;}
+#Bibliografia {background-color: #43484c;}
