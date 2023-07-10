@@ -14,9 +14,11 @@ body, html {
   padding: 0
 }
 
-img {
-  width: 100%;
+#formula {
+  width: 30vw;
   height: auto;
+  object-position: center center;
+  margin-left: 33%;
 }
 
 /* ------------------------------------- iFrame ------------------------------------- */
