@@ -13,9 +13,9 @@ html(lang="en")
       include ../public/stylesheets/heroimages.css
 
   body
-    button(class="tablink" onclick="openPage('Introduccion', this, '#f99e1a')") Introducción
+    button(class="tablink" onclick="openPage('Introduccion', this, '#f99e1a')" id="defaultOpen") Introducción
     button(class="tablink" onclick="openPage('Analisis', this, '#405275')") Análisis
     button(class="tablink" onclick="openPage('Conclusiones', this, '#218ffe')") Conclusiones
-    button(class="tablink" onclick="openPage('Referencias', this, '#43484c')" id="defaultOpen") Referencias
+    button(class="tablink" onclick="openPage('Referencias', this, '#43484c')") Referencias
 
     block content
