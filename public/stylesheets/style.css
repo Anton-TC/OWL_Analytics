@@ -18,7 +18,7 @@ body, html {
 
 .ifrm {
   width: 100%;
-  min-height: 800px;
+  min-height: 500px;
 }
 
 .row-container {
@@ -73,6 +73,6 @@ body, html {
 }
 
 #Introduccion {background-color: red;}
-#News {background-color: green;}
+#Analisis {background-color: green;}
 #Contact {background-color: blue;}
 #About {background-color: orange;}
