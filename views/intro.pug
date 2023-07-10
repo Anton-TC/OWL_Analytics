@@ -5,14 +5,13 @@ div(class="row")
     div(class="content") 
         div(class="card") 
             h2 PROPÓSITO
-            p Esta página web tiene el propósito de presentar información, gráficos y análisis para relacionar el uso de los distintos tipos de periféricos de tipo mouse con los resultados finales de los jugadores de la Overwatch League en la temporada del año 2021 con el fin de identificar si alguna de las variables (como el eDPI, peso, tamaño, ratio peso/tamaño, etc.) puede determinar un mejor rendimiento a la hora de jugar.
-            p Con este análisis se pretende obtener una mejor comprensión de los factores que podrían ayudar a determinar el rendimiento de los jugadores profesionales y ayudar a encontrar las mejores marcas y modelos de este tipo de periférico.
-
+            p Esta página web tiene el propósito de presentar información, gráficos y análisis para relacionar el uso de los distintos tipos de periféricos de tipo mouse, con los resultados finales de los jugadores de la Overwatch League en la temporada del año 2021 con el fin de identificar si alguna de las variables (como la sensibilidad, peso, tamaño, etc.) pueden determinar un mejor rendimiento a la hora de jugar.            
+            p Con este análisis se pretende obtener una mejor comprensión de los factores que podrían ayudar a determinar el rendimiento de los jugadores profesionales.
 
         div(class="card") 
             h2 FUENTE DE DATOS
             div(class="kaggle")
-            p Los datos a utilizar para este análisis fueron recopilados por un usuario fanático del videojuego y publicados en la página de Kaggle y se encuentran divididos en 5 distintos archivos:
+            p Los datos a utilizar para este análisis fueron recopilados por un usuario fanático del videojuego, publicados en la página de Kaggle y se encuentran divididos en 5 distintos archivos:
             P Mouse Data: Datos recopilados de la página de Rocket Jump Ninja, creador de contenido dedicado a criticar dispositivos de tipo “mouse”, con más de 100 revisiones de distintos modelos. Cuenta con la siguiente información:
 
             table(id="table")
@@ -34,7 +33,7 @@ div(class="row")
                     td Largo del periférico en centímetros.
                 tr
                     td GripWidth
-                    td Ancho del periférico en centímetros.
+                    td Ancho mínimo del periférico en centímetros.
                 tr
                     td Weight
                     td Peso del periférico en gramos.
@@ -42,7 +41,7 @@ div(class="row")
                     td WeightToSizeRatio
                     td Relación peso/tamaño (si el valor está abajo del 1 indica un peso ligero respecto a su tamaño y si el valor es mayor a 1 indica mayor peso respecto a su tamaño).
 
-            p OWL Roster: Datos recopilados de la página de Liquipedia, una wiki con información respecto a los jugadores de eSports. Cuenta con la siguiente información:
+            p OWL Roster: Datos recopilados de la página de #[a(href="https://liquipedia.net/")  liquipedia.net], una wiki con información respecto a los jugadores de eSports. Cuenta con la siguiente información: 
 
             table(id="table")
                 tr
@@ -72,7 +71,7 @@ div(class="row")
                     td Liga al canal de Twitch del jugador.
 
 
-            p Player Settings: Datos recopilados de progearandsettings.com, base de datos que recopila la configuración de cada jugador profesional. Cuenta con la siguiente información:
+            p Datos recopilados de #[a(href="https://progearandsettings.com/")  progearandsettings.com], base de datos que recopila la configuración de cada jugador profesional. Cuenta con la siguiente información:
 
             table(id="table")
                 tr
@@ -96,7 +95,7 @@ div(class="row")
                     td Marca del periférico que usa el jugador (Añadido para este análisis).
                 tr
                     td MouseWeight
-                    td Peso del periférico que usa el jugador.
+                    td Peso del periférico que usa el jugador en gramos.
                 tr
                     td MouseWeightToSizeRatio
                     td Relación peso/tamaño (explicado anteriormente) del periférico que usa el jugador.
@@ -105,17 +104,17 @@ div(class="row")
                     td Sensibilidad programada en el periférico que usa el jugador.
                 tr
                     td Sesitivity
-                    td Sensibilidad programada dentro del juego por el jugador
+                    td Sensibilidad programada dentro del juego por el jugador.
                 tr
                     td eDPI
                     td Sensibilidad efectiva del jugador (se calcula multiplicando el DPI del periférico por la sensibilidad dentro del juego).
                 tr
                     td cmPer360
-                    td Centímetros que recorre el jugador para lograr un giro de 360 grados.
+                    td Centímetros que recorre el mouse jugador para lograr un giro de 360 grados.
                 tr
                     td TwitchStream
                     td Liga al canal de Twitch del jugador.
-            p Teams Results: Datos recopilados por el autor de esta página web de liquipedia.com. Cuenta con la siguiente información: 
+            p Teams Results: Datos extendidos por el autor de esta página web y extraídos de #[a(href="https://liquipedia.net/")  liquipedia.com]. Cuenta con la siguiente información: 
 
             table(id="table")
                 tr
@@ -132,19 +131,19 @@ div(class="row")
         div(class="card") 
             h2 METODOLOGÍA
             div(class="qlik")
-            p El análisis se enfocó meramente en el uso las distintas funciones de la herramienta Qlik, la cual permitió realizar visualizaciones interactivas de tipo (gráficas de barras, KPI, pai, distribución, caja, etc.) las cuales permiten la correlación visual clara de la interacción entre las variables analizadas. No se realizaron cálculos de correlación debido al tamaño del proyecto.
+            p El análisis se enfocó meramente en el uso las distintas funciones de la herramienta Qlik, la cual permitió realizar visualizaciones interactivas de tipo gráfica de barras, KPI, pai, distribución, caja, etc. las cuales permitieron la correlación visual clara de la interacción entre las variables analizadas. No se realizaron cálculos de correlación debido al tamaño del proyecto.
 
         div(class="card") 
             h2 VARIABLES Y CARACTERÍSTICAS
             div(class="logi ")
             p En muchos videojuegos, mayormente en los FPS (First Person Shooter) la precisión del mouse es de suma importancia para lograr hazañas que permitan conseguir una ventaja importante contra los rivales, es por ello por lo que cada jugador debe seleccionar su dispositivo con cautela, pues existen distintos aspectos que pueden afectar el dominio del juego por parte de cada jugador profesional. Entre ellos se encuentran los siguientes:
             ol
-                li Peso
-                li Sensor
-                li Tamaño y forma
-                li Botones y rueda
-                li La distancia de levantamiento
-            p En este análisis se consideraron ciertas variables y características relacionadas al rendimiento y preferencia de los jugadores de cada equipo registrado orientadas al punto 1 y 3. Estas variables incluyeron:
+                li Peso.
+                li Sensor.
+                li Tamaño y forma.
+                li Botones y rueda.
+                li La distancia de levantamiento.
+            p En este análisis se consideraron las variables y características relacionadas al rendimiento y preferencia de los jugadores de cada equipo registrado, estas relacionadas del punto 1 al 3. Estas variables incluyeron:
             p Mouse Data:
 
             table(id="table")
@@ -179,14 +178,8 @@ div(class="row")
                     th Descripción
 
                 tr
-                    td ID
-                    td Nombre clave del jugador.
-                tr
                     td Team
                     td Equipo del jugador.
-                tr
-                    td Roles
-                    td Rol dentro del juego (Tanque, Daño o Soporte).
 
             p Player Settings:
 
@@ -195,12 +188,6 @@ div(class="row")
                     th Nombre de Variable
                     th Descripción
 
-                tr
-                    td Player
-                    td Nombre clave del jugador.
-                tr
-                    td Role
-                    td Rol dentro del juego (Tanque, Daño o Soporte).
                 tr
                     td MouseModel
                     td Modelo de periférico que usa el jugador.

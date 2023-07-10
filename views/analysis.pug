@@ -4,17 +4,17 @@ div(class="row")
     div(class="leftcolumn") 
         div(class="card") 
             h2 Pivote
-            p El gráfico pivote de todo el análisis es el que se encuentra a continuación (Gráfico 1), ya que representa la puntuación final de cada equipo participante en la temporada del año 2021. Su importancia reside en que si existe una configuración ideal, se encontrarán diferencias significativas entre el equipo en la primera posición y el equipo de la última posición, mientras que en los equipos en posiciones cercanas, se encontrará una diferencia mucho menor.
-            
+            p El gráfico pivote de todo el análisis es el que se encuentra a continuación, ya que representa la puntuación final de cada equipo participante en la temporada del año 2021. Su importancia reside en que si existe una configuración ideal, se encontrarán diferencias significativas entre el equipo en la primera posición y el equipo de la última posición, mientras que en los equipos en posiciones cercanas, se encontrará una diferencia mucho menor. 
+
             iframe(class= "ifrm" src="https://pr55hx3zw2skfny.us.qlikcloud.com/single/?appid=53b0d76b-0c0b-4897-af5a-fccd26dad6b0&sheet=36009a4a-94fa-411e-8a43-fbc8f423ca62&theme=horizon&opt=ctxmenu,currsel" style="border:none;width:100%;height:100%;")
             
             h2 Relación con características físicas
-            p Para iniciar el análisis, se buscó ver si existía una relación #[b visible] entre el posicionamiento de los equipos y las características de peso y tamaño graficando el largo, ancho y peso promedio de los periféricos de cada equipo en una sencilla gráfica de barras como se muestra en la figura a continuación (Gráfico 2).
+            p Para iniciar el análisis, se buscó ver si existía una relación visible entre el posicionamiento de los equipos y las características de peso y tamaño graficando el largo, ancho y peso promedio de los periféricos de cada equipo en una sencilla gráfica de barras como se muestra en el siguiente gráfico:
 
             iframe(class= "ifrm" src="https://pr55hx3zw2skfny.us.qlikcloud.com/single/?appid=53b0d76b-0c0b-4897-af5a-fccd26dad6b0&sheet=3f45a628-f572-4411-a5f3-33b63341050c&theme=horizon&opt=ctxmenu,currsel" style="border:none;width:100%;height:100%;")
 
-            p Al ver con detenimiento el grafico anterior, queda bastante claro que es difícil encontrar alguna relación existente, dado que los equipos se posicionan el lugares muy distintos en cada tabla a los que ocupan en la tabla de puntuación final, llegando a bajar y/o subir alrededor de 11 lugares. 
-            p Con este gráfico podemos decir que no existe una relación por una característica física en específico, sin embargo, aún es posible comparar esta información con una medida que integra todos estos aspectos físicos en un solo valor, el cual, se le conoce como “Weight to Size Ratio”. Esta medida multiplica el largo (L) por el ancho (A) del dispositivo dando como resultado el peso que debería tener el dispositivo, este resultado se divide sobre el peso real del dispositivo (Pr) para obtener la relación completa.
+            p Al ver con detenimiento el grafico anterior, queda bastante claro que es difícil encontrar alguna relación existente, dado que los equipos se posicionan el lugares muy distintos en cada tabla en comparación a los que ocupan en la tabla de la puntuación final, llegando a bajar y/o subir hasta 13 lugares en algunos casos.
+            p Con este gráfico podemos decir que no existe una relación por una característica física en específico, sin embargo, aún es posible comparar esta información con una medida que integra todos estos aspectos físicos en un solo valor, el cual, se le conoce como “Weight to Size Ratio”. Esta medida multiplica el largo (L) por el ancho (A) del dispositivo dando como resultado el peso que debería tener, este resultado se divide sobre el peso real (Pr) para obtener la relación completa.
 
             p FORMULA
             img(id="formula" src="/images/Equation.png", alt="") 
@@ -23,24 +23,24 @@ div(class="row")
 
             iframe(class= "ifrm" src="https://pr55hx3zw2skfny.us.qlikcloud.com/single/?appid=53b0d76b-0c0b-4897-af5a-fccd26dad6b0&sheet=a60931df-1240-405a-8cd0-52450b5125f2&theme=horizon&opt=ctxmenu,currsel" style="border:none;width:100%;height:100%;")
 
-            p Lo primero que se ha buscado con este gráfico fue corroborar alguna diferencia notoria entre el ratio del primer lugar (Shanghái Dragons) y el penúltimo (Vancouver Titans), sin embargo, la diferencia es muy pequeña (1.05 vs 1.11) mientras que en equipos con posicionamiento cercano, llegan a existir diferencias considerables, como entre Shanghái Dragons y Chengdu Hunters (1.05 vs 1.28) cuando solo cuentan con una diferencia de posicionamiento de dos lugares, dificultando así, el poder decir que estas variable dan ventaja a un equipo.
+            p Lo primero que se ha buscado con este gráfico fue corroborar alguna diferencia notoria entre el ratio del primer lugar (Shanghái Dragons) y el penúltimo (Vancouver Titans), sin embargo, la diferencia es muy pequeña (1.05 vs 1.11) mientras que, en equipos con posicionamiento cercano, llegan a existir diferencias considerables, como entre Shanghái Dragons y Chengdu Hunters (1.05 vs 1.28) cuando estos solo cuentan con una diferencia de posicionamiento de dos lugares, dificultando así, el poder decir que estas variables dan ventaja a un equipo.
 
             h2 Relación con configuración de sensor 
             p A pesar de la poca relación que muestran las variables físicas, aún se puede realizar una búsqueda por medio de la configuración del sensor del periférico. Para esto definiremos 3 términos importantes:
             
             ol
                 li DPI: Viene de las siglas Dots Per Inch y es una medida que define la velocidad de movimiento que el mouse ejerce sobre el cursor de la computadora. 
-                li Sensibilidad: Es la configuración que define la velocidad de movimiento de la mira solamente dentro del software en cuestión, no afecta el movimiento del cursor y por ende no afecta otras aplicaciones. 
+                li Sensibilidad: Es la configuración que define la velocidad de movimiento de la mira solamente dentro del software en cuestión, no afecta directamente el movimiento del cursor y por ende no afecta otras aplicaciones.
                 li eDPI: Viene de las siglas effective Dots Per Inch, es una medida que relaciona el valor DPI con la sensibilidad, estos valores se multiplican, dando como resultado el valor eDPI. Esto permite tener una referencia de la verdadera sensibilidad de cada jugador sin importar la configuración de hardware o software.
             
             p Con estos conceptos en mente, podemos realizar la misma búsqueda que con la configuración física del dispositivo, obteniendo el siguiente gráfico como resultado:
 
             iframe(class= "ifrm" src="https://pr55hx3zw2skfny.us.qlikcloud.com/single/?appid=53b0d76b-0c0b-4897-af5a-fccd26dad6b0&sheet=b8933839-7083-4147-af3e-6f16d59cbbc1&theme=horizon&opt=ctxmenu,currsel" style="border:none;width:100%;height:100%;")
 
-            p Desafortunadamente, con esta información sigue resultando complicado determinar de forma visual, la existencia de una relación, dado a que existe una gran variedad de cambios de posicionamiento en cada tabla comparando con el posicionamiento de la puntuación final.
+            p Desafortunadamente, con esta información sigue resultando complicado determinar de forma visual, la existencia de una relación, dado a que existe una gran variedad de cambios de posicionamiento en cada tabla comparando con el posicionamiento de la puntuación final, justo como sucedió en la comparación con las características físicas.
 
             h2 Relación con la marca del periférico 
-            p Finalmente se decidió por verificar si la marca de los periféricos podría tener un impacto en los resultados con el siguiente gráfico.
+            p Finalmente se decidió por verificar si la marca de los periféricos podría tener un impacto en los resultados con el siguiente gráfico: 
 
             iframe(class= "ifrm" src="https://pr55hx3zw2skfny.us.qlikcloud.com/single/?appid=53b0d76b-0c0b-4897-af5a-fccd26dad6b0&sheet=6b5dbd12-d96c-48e3-bc74-a51bfe9cc7b3&theme=horizon&opt=ctxmenu,currsel" style="border:none;width:100%;height:100%;")
 
